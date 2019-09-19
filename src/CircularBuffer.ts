@@ -1,3 +1,6 @@
+/**
+ * Circular buffer
+ */
 export class CircularBuffer<T = any> {
   private pointerWrite = 0;
   private pointerRead = 0;
@@ -16,11 +19,17 @@ export class CircularBuffer<T = any> {
     this.allowOverFlow = allowOverFlow;
     this.buffer = new Array(this.length);
   }
-
-  public size() {
+  /**
+   * count of item in list
+   * @returns {number} size of list
+   */
+  public size(): number {
     return this.count;
   }
-
+  /**
+   * pop out from lista last
+   * @returns {T} oldes item
+   */
   public pop(): T {
     if (this.count === 0) {
       throw "empty";
@@ -36,9 +45,13 @@ export class CircularBuffer<T = any> {
     return temp;
   }
 
-  public push(item: T) {
+  /**
+   * Push item in circular buffer
+   * @param item {T} item
+   */
+  public push(item: T): void {
     if (!this.allowOverFlow && this.count === this.length) {
-      throw "overFlow";
+      throw "over flow";
     }
     this.buffer[this.pointerWrite] = item;
     this.pointerWrite = (this.length + this.pointerWrite + 1) % this.length;
@@ -48,14 +61,20 @@ export class CircularBuffer<T = any> {
       this.count++;
     }
   }
-
-  public clear() {
+  /**
+   * Empty the circle buffer
+   */
+  public clear(): void {
     this.pointerRead = 0;
     this.pointerWrite = 0;
     this.count = 0;
     this.buffer = new Array(this.length);
   }
 
+  /**
+   * pop all item
+   * @returns {T[]} list
+   */
   public export(): T[] {
     let result: T[] = [];
     while (this.size() > 0) {
