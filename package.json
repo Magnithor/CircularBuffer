@@ -1,0 +1,15 @@
+{
+  "name": "circularbuffer",
+  "version": "0.0.1",
+  "description": "Circular buffer / ring buffer with overflow support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CircularBuffer",
+    "RingBuffer"
+  ],
+  "author": "Magni Þór Birgisson",
+  "license": "ISC"
+}
