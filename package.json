@@ -4,12 +4,22 @@
   "description": "Circular buffer / ring buffer with overflow support",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build" : "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "respository": {
+    "type": "git",
+    "url": "https://github.com/Magnithor/CircularBuffer.git"
   },
   "keywords": [
     "CircularBuffer",
     "RingBuffer"
   ],
   "author": "Magni Þór Birgisson",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
 }
