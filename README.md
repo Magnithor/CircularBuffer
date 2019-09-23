@@ -1,5 +1,9 @@
 # CircularBuffer
 
+[![GitHub issues](https://img.shields.io/github/issues/Magnithor/CircularBuffer)](https://github.com/Magnithor/CircularBuffer/issues)
+![github languages](https://img.shields.io/github/languages/top/grant-zietsman/validate-typescript.png)
+
+
 ## Allow OverFlow = true
 ```javascript
 var circularBuffer = new CircularBuffer(2 /*length*/, true /*allowOverFlow*/);
