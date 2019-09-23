@@ -1,7 +1,7 @@
 # CircularBuffer
 
 ## Allow OverFlow = false
-'''javascript
+```javascript
 var circularBuffer = new CircularBuffer(2 /*length*/, false /*allowOverFlow*/);
 circularBuffer.push(1);
 circularBuffer.push(2);
@@ -10,11 +10,10 @@ console.log(circularBuffer.pop()); // 2
 circularBuffer.push(3);
 circularBuffer.push(4);
 circularBuffer.push(5); // throw "overflow"
-
-'''
+```
 
 ## Allow OverFlow = true
-'''javascript
+```javascript
 var circularBuffer = new CircularBuffer(2 /*length*/, true /*allowOverFlow*/);
 circularBuffer.push(1);
 circularBuffer.push(2);
@@ -24,7 +23,7 @@ console.log(circularBuffer.size()); // 2
 console.log(circularBuffer.pop());  // 2
 console.log(circularBuffer.pop());  // 3
 console.log(circularBuffer.size()); // 0
-'''
+```
 
 ## Description and Big O 
 
