@@ -1,6 +1,6 @@
 # CircularBuffer
 
-'''javascript
+'''
 var circularBuffer = new CircularBuffer(10, true);
 circularBuffer.push(1);
 circularBuffer.push(4);
