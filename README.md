@@ -1,14 +1,14 @@
 # CircularBuffer
 
-'''
+```
 var circularBuffer = new CircularBuffer(10, true);
 circularBuffer.push(1);
 circularBuffer.push(4);
 console.log(circularBuffer.pop()); // 1
 console.log(circularBuffer.pop()); // 4
-'''
+```
 
-Function | Big O | description
+Function | Big O | Description
 ---------|-------|------------
 push | O(1)| push item to circular buffer
 pop | O(1) | pop item of circular buffer
