@@ -51,7 +51,7 @@ export class CircularBuffer<T = any> {
    */
   public push(item: T): void {
     if (!this.allowOverFlow && this.count === this.length) {
-      throw "over flow";
+      throw "overflow";
     }
     this.buffer[this.pointerWrite] = item;
     this.pointerWrite = (this.length + this.pointerWrite + 1) % this.length;

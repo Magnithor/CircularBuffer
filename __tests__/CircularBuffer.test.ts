@@ -37,7 +37,7 @@ test("allowOverFlow false", () => {
   expect(circularBuffer.size()).toBe(3);
   expect(() => {
     circularBuffer.push(3);
-  }).toThrow("over flow");
+  }).toThrow("overflow");
 });
 
 test("allowOverFlow true", () => {

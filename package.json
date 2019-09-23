@@ -1,6 +1,6 @@
 {
   "name": "mthb-circular-buffer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Circular buffer / ring buffer with overflow support",
   "main": "lib/CircularBuffer.js",
   "tupes": "lib/CircularBuffer.js",
@@ -21,11 +21,14 @@
   },
   "keywords": [
     "CircularBuffer",
-    "RingBuffer"
+    "RingBuffer", 
+    "TypeScript", 
+    "Overflow"
   ],
   "files": [
     "lib/**/*"
   ],
+  "bugs": {"url": "https://github.com/Magnithor/CircularBuffer/issues"},
   "author": "Magni Þór Birgisson",
   "license": "ISC",
   "homepage": "https://github.com/Magnithor/CircularBuffer/blob/master/README.md",
