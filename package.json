@@ -1,6 +1,6 @@
 {
   "name": "mthb-circular-buffer",
-  "version": "0.0.42",
+  "version": "0.0.43",
   "description": "Circular buffer / ring buffer with overflow support",
   "main": "lib/CircularBuffer.js",
   "tupes": "lib/CircularBuffer.js",
