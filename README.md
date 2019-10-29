@@ -3,6 +3,9 @@
 [![GitHub issues](https://img.shields.io/github/issues/Magnithor/CircularBuffer)](https://github.com/Magnithor/CircularBuffer/issues)
 ![github languages](https://img.shields.io/github/languages/top/grant-zietsman/validate-typescript.png)
 
+```javascript
+import { CircularBuffer } from 'mthb-circular-buffer';
+```
 
 ## Allow OverFlow = true
 ```javascript
